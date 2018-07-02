@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.syjjkj.kxwq.ticket.BuyTicketActivity">
+    <RelativeLayout
+        android:id="@+id/rl_8"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff" >
+        <LinearLayout
+            android:focusable="true" android:focusableInTouchMode="true"
+            android:layout_width="0px" android:layout_height="0px"/>
+        <LinearLayout
+            android:id="@+id/rl_8_1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_hight"
+            android:background="#ffffff"
+            android:weightSum="2.1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <!--<View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#e5e5e5" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="#e5e5e5" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#e5e5e5"
+                 />-->
+
+
+
+            <TextView
+                android:id="@+id/rl_8_tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实付款:"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/normal"
+                android:layout_weight="0.1"  />
+
+            <TextView
+                android:id="@+id/buy_ticket_product_tv_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="@dimen/normal"
+                android:layout_weight="0.9"  />
+            <Button
+                android:id="@+id/buy_ticket_product_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="确认"
+                android:layout_weight="1.1"
+                android:layout_alignParentBottom="true"
+                android:background="@color/red"
+                android:textColor="#ffffff" />
+
+            <!--<TextView
+                android:id="@+id/rl_8_tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/buy_ticket_product_tv_return_pv"
+                android:text="返还积分:"
+                android:textSize="@dimen/normal" />
+
+            <TextView
+                android:id="@+id/buy_ticket_product_tv_return_pv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text=""
+                android:textSize="@dimen/normal" /-->>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <!--android:layout_below="@+id/rl_8"-->
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/rl_8">
+        <ScrollView
+            android:id="@+id/sc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.AppBarLayout
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/AppTheme.AppBarOverlay">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/colorPrimary"
+                        app:popupTheme="@style/AppTheme.PopupOverlay" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:text="购买门票"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/normal_big_1"
+                            android:textStyle="bold" />
+
+
+                    </android.support.v7.widget.Toolbar>
+
+                </android.support.design.widget.AppBarLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/title"
+                    android:background="#ffffff" >
+                    <TextView
+                        android:id="@+id/buy_ticket_product_rl_1_tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"
+                        android:text="康溪温泉门票(成人票)"
+                        android:textColor="@color/black_deep"
+                        android:textSize="@dimen/normal" />
+                    <WebView
+                        android:id="@+id/buy_ticket_product_rl_1_tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="购票须知"
+                        android:layout_marginLeft="8dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/buy_ticket_product_rl_1_tv_1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <TextView
+                        android:id="@+id/buy_ticket_product_rl_1_tv_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="点此查看订单须知"
+                        android:textColor="@color/colorGreen"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignLeft="@+id/buy_ticket_product_rl_1_tv_1"
+                        android:layout_alignStart="@+id/buy_ticket_product_rl_1_tv_1" />
+                   <!-- <ImageView
+                        android:id="@+id/buy_ticket_product_rl_1_iv_1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@+id/buy_ticket_product_rl_1_tv_1"
+                        android:layout_alignLeft="@+id/buy_ticket_product_rl_1_tv_1"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/square_img"
+                        />
+                    <TextView
+                        android:id="@+id/buy_ticket_product_rl_1_tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="入园保障"
+                        android:layout_toRightOf="@+id/buy_ticket_product_rl_1_iv_1"
+                        android:layout_alignTop="@+id/buy_ticket_product_rl_1_iv_1"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/gray"
+                        android:layout_marginLeft="15dp"/>-->
+                  <!--  <ImageView
+                        android:id="@+id/buy_ticket_product_rl_1_iv_2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/buy_ticket_product_rl_1_tv_1"
+                        android:layout_toRightOf="@+id/buy_ticket_product_rl_1_tv_2"
+                        android:layout_alignTop="@+id/buy_ticket_product_rl_1_iv_1"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/square_img"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="入园保障"
+                        android:layout_toRightOf="@+id/buy_ticket_product_rl_1_iv_2"
+                        android:layout_alignTop="@+id/buy_ticket_product_rl_1_iv_1"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/gray"
+                        android:layout_marginLeft="15dp"/>
+-->
+                   <!-- <ImageView
+                        android:id="@+id/buy_ticket_product_rl_1_iv_3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@+id/buy_ticket_product_rl_1_tv_1"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignTop="@+id/buy_ticket_product_rl_1_iv_1"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/lower_triangle"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="入园保障"
+                        android:layout_toLeftOf="@+id/buy_ticket_product_rl_1_iv_3"
+                        android:layout_alignTop="@+id/buy_ticket_product_rl_1_iv_1"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/colorGreen"
+                        android:layout_marginRight="10dp"/>-->
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/item_hight"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/rl_1"
+                    android:background="#ffffff" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignLeft="@+id/ImageView01"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="15dp"
+                        android:background="#e5e5e5" />
+
+                    <TextView
+                        android:id="@+id/buy_ticket_product_rl_2_tv_validity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@+id/rl_content_3_tv_2"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:text="2017-07-30"
+                        android:gravity="right"
+                        android:textSize="@dimen/normal" />
+
+
+
+
+                    <TextView
+                        android:id="@+id/rl_content_3_tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="选择时间"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/normal" />
+
+
+                </RelativeLayout>
+                <!--<View
+                    android:id="@+id/vi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#e5e5e5"
+                    android:layout_below="@+id/rl_2"/>-->
+
+                <RelativeLayout
+                    android:id="@+id/rl_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/item_hight"
+                    android:layout_below="@+id/rl_2"
+                    android:background="#ffffff" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignLeft="@+id/ImageView01"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="15dp"
+                        android:background="#e5e5e5" />
+
+
+                    <TextView
+                        android:id="@+id/buy_ticket_product_rl_3_tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:text="0"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/normal" />
+
+
+
+                    <TextView
+                        android:id="@+id/rl_content_4_tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="单价"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/normal" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/item_hight"
+                    android:layout_below="@+id/rl_3"
+                    android:background="#ffffff" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignLeft="@+id/ImageView01"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="15dp"
+                        android:background="#e5e5e5"
+                        android:id="@+id/view" />
+
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/rl_content_5_tv_1"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_marginRight="20dp"-->
+                    <!--android:text="1"-->
+                    <!--android:textColor="@color/red"-->
+                    <!--android:textSize="18dp" />-->
+                    <com.syjjkj.kxwq.myview.AmountView
+                        android:id="@+id/buy_ticket_amount_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="right"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        app:btnTextSize="14sp"
+                        app:btnWidth="36dp"
+                        app:tvWidth="50dp"/>
+
+
+
+                    <TextView
+                        android:id="@+id/rl_content_5_tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="购买数量"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/normal" />
+
+
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/item_hight"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/rl_4"
+                    android:background="#ffffff" >
+
+                    <View
+                        android:id="@+id/View02"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignLeft="@+id/ImageView01"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="15dp"
+                        android:background="#e5e5e5" />
+
+                  <!--  <ImageView
+                        android:id="@+id/item_tickets_product_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@mipmap/right" />
+                    <TextView
+                        android:id="@+id/item_tickets_product_tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_toLeftOf="@+id/item_tickets_product_iv"
+                        android:text="更换"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/normal" />-->
+
+                    <!--<View-->
+                    <!--android:id="@+id/View03"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:background="#e5e5e5" />-->
+
+                    <TextView
+                        android:id="@+id/rl_5_tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="联系人"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/normal"
+                        />
+
+                    <EditText
+                        android:id="@+id/buy_ticket_product_rl_5_et_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@+id/rl_5_tv_1"
+                        android:text=""
+                        android:textColor="#525252"
+                        android:textSize="@dimen/normal"
+                        android:singleLine="true"
+
+                        android:background="@null"
+
+                        android:layout_alignRight="@+id/View02"
+                        android:layout_alignEnd="@+id/View02" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/item_hight"
+                    android:layout_below="@+id/rl_5"
+                    android:background="#ffffff" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignLeft="@+id/ImageView01"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="15dp"
+                        android:background="#e5e5e5"
+                        android:id="@+id/view2" />
+
+
+
+                    <TextView
+                        android:id="@+id/rl_6_tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:text="联系电话"
+                        android:textColor="@color/gray"
+
+                        android:textSize="@dimen/normal"
+                      />
+
+                    <EditText
+                        android:id="@+id/buy_ticket_product_rl_6_et_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@+id/rl_6_tv_1"
+                        android:text=""
+                        android:textColor="#525252"
+                        android:inputType="number"
+                        android:textSize="@dimen/normal"
+                        android:singleLine="true"
+
+                        android:background="@null"
+                        android:layout_alignRight="@+id/view2"
+                        android:layout_alignEnd="@+id/view2" />
+
+
+                </RelativeLayout>
+
+
+                <!--<RelativeLayout-->
+                <!--android:id="@+id/rl_6_extra1"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="@dimen/item_hight"-->
+                <!--android:layout_below="@+id/rl_6"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:visibility="gone"-->
+                <!--android:background="#ffffff" >-->
+
+                <!--<View-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_alignLeft="@+id/ImageView01"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:background="#e5e5e5" />-->
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/buy_ticket_product_rl_6_extra1_tv_temp_price"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:text="0"-->
+                <!--android:textColor="@color/red"-->
+                <!--android:textSize="@dimen/normal" />-->
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/rl_content_6_extra1_tv_2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:text="商品金额"-->
+                <!--android:textColor="@color/gray"-->
+                <!--android:textSize="@dimen/normal" />-->
+
+
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:id="@+id/rl_6_extra2"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="@dimen/item_hight"-->
+                <!--android:layout_below="@+id/rl_6_extra1"-->
+                <!--android:visibility="gone"-->
+                <!--android:background="#ffffff" >-->
+
+                <!--<View-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_alignLeft="@+id/ImageView01"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:background="#e5e5e5" />-->
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/buy_ticket_product_rl_6_extra2_tv_temp_pv"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:text="0"-->
+                <!--android:textColor="@color/red"-->
+                <!--android:textSize="@dimen/normal" />-->
+
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/rl_content_6_extra2_tv_2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:text="积分"-->
+                <!--android:textColor="@color/gray"-->
+                <!--android:textSize="@dimen/normal" />-->
+
+
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:id="@+id/rl_7"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/rl_6_extra2"-->
+                <!--android:visibility="gone"-->
+                <!--android:background="#f0f0f0" >-->
+                <!--<TextView-->
+
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:text="购买门票时请选择购买的门票类别，门票分为假日票和平日票。假日票成人票价为150元儿童票为75元、平日票成人票价为120元、儿童票为60元。"-->
+                <!--android:textColor="@color/gray"-->
+                <!--android:lineSpacingExtra="9dp"-->
+                <!--android:textSize="@dimen/normal_small_1" />-->
+
+                <!--</RelativeLayout>-->
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/rl_7"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_hight"
+            android:background="#ffffff"
+            android:layout_below="@+id/sc"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@+id/ImageView01"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:background="#e5e5e5"
+                android:id="@+id/view3" />
+            <TextView
+                android:id="@+id/rl_7_tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:text="身份证"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/normal"
+                />
+            <EditText
+                android:id="@+id/buy_ticket_product_rl_7_id_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/rl_7_tv_1"
+                android:text=""
+                android:textColor="#525252"
+                android:textSize="@dimen/normal"
+                android:singleLine="true"
+                android:background="@null"
+                android:layout_alignRight="@+id/view3"
+                android:layout_alignEnd="@+id/view3" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

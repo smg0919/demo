@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+         >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="房态查询"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/normal_big_1"
+            android:textStyle="bold" />
+       <!-- <TextView
+            android:id="@+id/tv_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="订房记录"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/normal_small_1"
+            android:background="@drawable/text_right_save"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold" />-->
+    </android.support.v7.widget.Toolbar>
+    <WebView
+        android:id="@+id/login_iv_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#f5f5f5"/>
+    <!-- TextView elements here -->
+</LinearLayout>
+
+

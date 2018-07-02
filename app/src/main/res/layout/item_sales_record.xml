@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/item_rl_1"
+android:layout_width="fill_parent"
+android:layout_height="@dimen/item_hight"
+    android:minHeight="@dimen/item_hight"
+
+android:layout_below="@+id/linearLayout2"
+android:background="#ffffff" >
+
+<View
+    android:id="@+id/View02"
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:layout_alignLeft="@+id/ImageView01"
+    android:layout_alignParentBottom="true"
+    android:layout_marginLeft="15dp"
+    android:background="#e5e5e5" />
+
+
+
+
+<!--<View-->
+    <!--android:id="@+id/View03"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:background="#e5e5e5" />-->
+
+<TextView
+    android:id="@+id/item_sales_record_tv_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="7dp"
+    android:layout_marginLeft="15dp"
+    android:text="一级分享"
+    android:textColor="#525252"
+    android:textSize="@dimen/normal" />
+    <TextView
+        android:id="@+id/item_sales_record_tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignTop="@+id/item_sales_record_tv_1"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_alignParentRight="true"
+        android:text="销售150元"
+        android:textSize="@dimen/normal" />
+    <TextView
+    android:id="@+id/item_sales_record_tv_3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/item_sales_record_tv_1"
+    android:layout_alignLeft="@+id/item_sales_record_tv_1"
+        android:layout_marginTop="5dp"
+    android:text="返"
+    android:textSize="16dp" />
+    <TextView
+        android:id="@+id/item_sales_record_tv_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item_sales_record_tv_3"
+        android:layout_toRightOf="@+id/item_sales_record_tv_3"
+        android:text="20"
+        android:textColor="@color/red"
+        android:textSize="16dp" />
+    <TextView
+        android:id="@+id/item_buy_record_tv_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_alignTop="@+id/item_sales_record_tv_3"
+        android:layout_toRightOf="@+id/item_sales_record_tv_4"
+        android:text="积分"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/item_sales_record_tv_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/item_sales_record_tv_3"
+        android:layout_marginRight="@dimen/margin_right"
+        android:text="2017-06-02"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/normal_small_1"/>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/item_rl_1"
+android:layout_width="fill_parent"
+android:layout_height="@dimen/item_hight"
+    android:minHeight="@dimen/item_hight"
+
+android:layout_below="@+id/linearLayout2"
+android:background="#ffffff" >
+
+<View
+    android:id="@+id/View02"
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:layout_alignLeft="@+id/ImageView01"
+    android:layout_alignParentBottom="true"
+    android:layout_marginLeft="15dp"
+    android:background="#e5e5e5" />
+
+<ImageView
+    android:id="@+id/item_tickets_product_iv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="23dp"
+    android:src="@mipmap/right" />
+<TextView
+    android:id="@+id/item_tickets_product_tv_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginRight="15dp"
+    android:layout_toLeftOf="@+id/item_tickets_product_iv"
+    android:text="$176"
+    android:textColor="@color/red"
+    android:textSize="18dp" />
+
+<!--<View-->
+    <!--android:id="@+id/View03"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:background="#e5e5e5" />-->
+
+<TextView
+    android:id="@+id/item_tickets_product_tv_2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="16dp"
+    android:text="康溪温泉门票-成人票"
+    android:textColor="#525252"
+    android:textSize="18dp" />
+
+
+</RelativeLayout>

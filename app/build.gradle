@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'kxwq'
+            keyPassword '123456'
+            storeFile file('F:/kxwq/key.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+    defaultConfig {
+        applicationId "com.syjjkj.kxwq"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 4
+        versionName "3.1"
+        multiDexEnabled true//修改finished withnon-zero exit value 2问题
+//配置个推
+        manifestPlaceholders = [
+                GETUI_APP_ID : "yZEAsqw7xv7UM1twjaZvF5",
+                GETUI_APP_KEY : "sGh6VUuieE6mnJ5kGPBSS7",
+                GETUI_APP_SECRET : "GkmiyRQKIq5VH4M3Uy7vm"
+        ]
+        //配置个推结束
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            debuggable true
+            signingConfig signingConfigs.config
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    dexOptions {
+        incremental false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile files('libs/xUtils-2.6.14.jar')
+    compile files('libs/bugly_1.2.8_release.jar')
+    compile files('libs/fb.jar')
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:support-v4:24.1.1'
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile 'com.android.support:design:24.1.1'
+    compile project(':PullToRefreshLibrary')
+    compile files('libs/GetuiSDK2.10.2.0.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/wechat-sdk-android-with-mta-1.0.2.jar')
+}

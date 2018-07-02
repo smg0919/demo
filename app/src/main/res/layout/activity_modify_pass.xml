@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0"
+    tools:context="com.syjjkj.kxwq.member.FragmentMember">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="修改密码"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/normal_big_1"
+                android:textStyle="bold" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="0dp">
+    <RelativeLayout
+        android:id="@+id/modify_rl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+>
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="修改密码"
+            android:textSize="@dimen/normal"
+            android:textColor="#5e5e5e" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+         android:layout_alignParentBottom="true"
+            android:background="#e5e5e5" />-->
+    </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/modify_rl_username"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/modify_rl_title"
+            android:background="#ffffff"
+            >
+            <View
+                android:id="@+id/View02"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#e5e5e5" />
+
+            <View
+                android:id="@+id/View01"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="#e5e5e5" />
+            <TextView
+                android:id="@+id/modify_tv_oldpass"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="原始密码"
+                android:textSize="@dimen/normal_small_1"
+                android:textColor="#282828" />
+
+            <EditText
+                android:id="@+id/modify_et_oldpass"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/modify_tv_oldpass"
+                android:background="@null"
+                android:hint="请输入原始密码"
+                android:textSize="@dimen/normal_small_1"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#999999">
+
+                <requestFocus />
+            </EditText>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="*第一次修改密码无需输入原密码"
+            android:textSize="@dimen/normal_small_1"
+            android:textColor="@color/red"  />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/modify_rl_newpass"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:layout_below="@+id/modify_rl_username" >
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#e5e5e5" />
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="#e5e5e5" />
+
+            <TextView
+                android:id="@+id/modify_tv_newpass"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="新密码 "
+                android:textSize="@dimen/normal_small_1"
+                android:textColor="#282828" />
+
+            <EditText
+                android:id="@+id/modify_et_newpass"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/modify_tv_newpass"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/ImageView01"
+                android:background="@null"
+                android:hint="请输入新密码"
+                android:textSize="@dimen/normal_small_1"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:textColor="#999999">
+            </EditText>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/modify_rl_conformpass"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:layout_below="@+id/modify_rl_newpass" >
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="#e5e5e5" />
+
+            <View
+
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="#e5e5e5" />
+            <TextView
+                android:id="@+id/modify_tv_conformpass"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="再次输入"
+                android:textSize="@dimen/normal_small_1"
+                android:textColor="#282828" />
+
+            <EditText
+                android:id="@+id/modify_et_conformpass"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/modify_tv_conformpass"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/ImageView01"
+                android:background="@null"
+                android:hint="请再次输入密码"
+                android:textSize="@dimen/normal_small_1"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="#999999">
+            </EditText>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/modify_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/rl_01"
+        android:layout_alignRight="@+id/rl_01"
+        android:layout_below="@+id/rl_01"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_login"
+        android:text="确认"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/register_btn"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="22dp"
+        android:textSize="8dp" />
+
+
+
+
+</LinearLayout>
+

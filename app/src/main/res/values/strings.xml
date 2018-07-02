@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">康溪分销</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="kong"></string>
+    <!-- 通讯录 -->
+    <string name="address_title">通讯录</string>
+    <string name="address_new_friend">新朋友</string>
+    <string name="address_linkman">群聊</string>
+    <string name="address_addfriend">添加好友</string>
+    <string name="address_feedback">意见反馈</string>
+    <string name="fried_new">新的朋友</string>
+    <string name="fried_null">@null</string>
+    <!-- 设置 -->
+    <string name="setting">设置</string>
+    <string name="safety">账号与安全</string>
+    <string name="privacy">隐私管理</string>
+    <string name="inform">消息通知</string>
+    <string name="more">更多设置</string>
+    <string name="message_setting">信息设置</string>
+    <string name="head">头像</string>
+    <string name="nickname">昵称</string>
+    <string name="company">公司</string>
+    <string name="city">城市</string>
+    <string name="city_xuanze">城市选择</string>
+    <string name="personalized">个性签名</string>
+    <string name="save">保存</string>
+    <string name="company_xiangqing">公司详情</string>
+    <string name="chatpicture">聊天图片</string>
+    <string name="shares">分享</string>
+    <string name="canceld">取消 </string>
+    <string name="confirm">确定 </string>
+    <string name="dele_company">删除公司 </string>
+    <string name="empty_history">清空历史记录</string>
+    <string name="empty_picture">清空图片缓存</string>
+    <string name="phone_pipei">手机通讯录匹配</string>
+    <string name="update_cheku">更新车型库</string>
+    <string name="message">信息字体大小</string>
+    <string name="employ">使用教程</string>
+    <string name="feedback">意见反馈</string>
+    <string name="about">关于车圈</string>
+    <string name="logout">注销</string>
+    <string name="XL">特大</string>
+    <string name="big">大</string>
+    <string name="standard">标准</string>
+    <string name="little">小</string>
+    <string name="safety_activity">账户安全</string>
+    <string name="safety_list">账号安全</string>
+    <string name="newmessge">新消息提醒</string>
+    <string name="voice">声音</string>
+    <string name="shake">震动</string>
+    <string name="show_content">显示内容</string>
+    <string name="friend">加我为好友时需要验证</string>
+    <string name="contacts">向我推荐通讯录好友</string>
+    <string name="about_content">\u0020\u0020\u0020\u0020万网创立于1996年4月，同年以著名“域名保护运动”在中国开创了以域名服务的先河
+        ，是中国最大的域名服务商，中国虚拟主机服务的开创者，中国企业邮箱服务的领先者和中国网站建设服务的创新者。目前，已有超过1000万个域名通过万网注册，每天
+        超过3百万次的域名在万网查询，百亿次的域名解析服务（DNS）请求由万网承载。</string>
+    <string name="phone_contacts">手机通讯录匹配</string>
+    <string name="ok">完成</string>
+    <!-- 登录注册 -->
+    <string name="register_title">注册</string>
+    <string name="register">用户注册</string>
+    <string name="login">登录</string>
+    <string name="forgetpwd">忘记密码？</string>
+    <string name="forget">忘记密码</string>
+    <string name="phone">手机号：</string>
+    <string name="verification">验证码：</string>
+    <string name="password">密码：</string>
+    <string name="verify">验证密码：</string>
+    <string name="affirm">确认并提交</string>
+    <string name="querenpassword">确认密码：</string>
+    <string name="shuruverify">输入验证码：</string>
+    <string name="shurunewpwd">输入新密码：</string>
+    <string name="querennewpwd">确认新密码：</string>
+    <!-- 车辆 -->
+    <string name="mycompany">公司设置</string>
+    <string name="newmycompany">创建一个新公司</string>
+    <string name="companyhead">公司头像</string>
+    <string name="companyname">公司名称</string>
+    <string name="companytsp">公司简称</string>
+    <string name="companycity">所属城市</string>
+    <string name="companyabstract">公司地址</string>
+    <string name="companyaptitude">公司资质</string>
+    <string name="companypicture">公司图片</string>
+    <string name="companyLogo">公司Logo</string>
+    <string name="click">点击创建</string>
+    <string name="newgongsi">创建新公司</string>
+    <string name="newbenelux">公司全称</string>
+    <string name="intro">公司地址</string>
+    <string name="establish">创建公司详情</string>
+    <string name="carlist">车辆列表</string>
+    <string name="account">账号管理</string>
+    <string name="Consignment">查看寄售</string>
+    <string name="issue">发布车辆</string>
+    <string name="Low">查看底价</string>
+    <string name="Sale">定价改价</string>
+    <string name="jurisdiction">用户权限</string>
+    <string name="newAPIKey">新的申请</string>
+    <string name="phoneBook">手机通讯录</string>
+    <string name="LocalBook">本地好友推荐</string>
+    <string name="search">搜索</string>
+    <string name="seekresult">搜索结果</string>
+    <string name="adf">推荐好友</string>
+    <string name="picturelist">图片相册</string>
+    <string name="mileage">公里数</string>
+    <string name="textdescription">车辆卖点</string>
+    <string name="send">发送</string>
+    <string name="purchasestyle">收购类型</string>
+    <string name="cirfriend">车圈好友</string>
+    <string name="cirstate">车辆状态</string>
+    <string name="phonetic">语音描述</string>
+    <!-- 聊天 -->
+    <string name="select">选择</string>
+    <string name="backdrop">聊天背景</string>
+    <string name="eroticism">色情</string>
+    <string name="cheat">欺诈</string>
+    <string name="harass">广告骚扰</string>
+    <string name="elses">其他</string>
+    <string name="complaint">投诉</string>
+    <string name="Details">详情信息</string>
+    <string name="mores">更多</string>
+    <string name="remark">设置备注</string>
+    <string name="sendcard">发送名片</string>
+    <string name="blacklist">加入黑名单</string>
+    <string name="delete">删除</string>
+    <string name="settingremark">设置备注</string>
+    <string name="choice">选择好友</string>
+    <string name="friendlist">好友列表</string>
+    <string name="share_description">        纵鑫横二手车在售车辆一览\n    【质量担保】 无事故/无水泡\n    【销售热线】024-55055589\n    【质量担保】www.fafdsj.com</string>
+    <string name="message2">信息</string>
+
+    <string name="app_tip">提示</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="title_activity_main3">Main3Activity</string>
+
+
+</resources>
